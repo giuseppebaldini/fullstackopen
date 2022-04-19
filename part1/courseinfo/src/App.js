@@ -1,23 +1,23 @@
-const Header = (props) => {
+const Header = ({course}) => {
   return (
     <>
-      <h1>{props.course}</h1>
+      <h1>{course}</h1>
     </>
   )
 }
 
-const Content = (props) => {
+const Content = ({part, exercises}) => {
   return (
     <>
-      <p>{props.part} {props.exercises}</p>
+      <p>{part} {exercises}</p>
     </>
   )
 }
 
-const Total = (props) => {
+const Total = ({total}) => {
   return (
     <>
-      <p>Number of exercises {props.total}</p>
+      <p>Number of exercises {total}</p>
     </>
   )
 }
